@@ -7,81 +7,64 @@
   <title>Auto Ignorant — Personal Creative Archive</title>
   <link rel="stylesheet" href="./styles.css">
 </head>
-<body>
-  <header class="site-header">
-    <a class="brand" href="./index.html" aria-label="Back to home">
-      <span class="brand-mark" aria-hidden="true">AI</span>
-      <span>Auto Ignorant</span>
-    </a>
-    <nav class="site-nav" aria-label="Main navigation">
-      <a class="active" href="./index.html" aria-current="page">Home</a>
+<body class="blog-home">
+  <header class="blog-header">
+    <p class="blog-kicker">Personal creative archive · Since 2026</p>
+    <a class="blog-title" href="./index.html" aria-label="Auto Ignorant home">Auto Ignorant</a>
+    <p class="blog-description">Images, comics, articles, games, and other questionable decisions.</p>
+    <nav class="blog-nav" aria-label="Main navigation">
+      <a href="./index.html" aria-current="page">Home</a>
       <a href="./Comics.html">Comics</a>
+      <a href="#archive">Archive</a>
     </nav>
   </header>
 
-  <main>
-    <section class="hero">
-      <p class="eyebrow">PERSONAL CREATIVE ARCHIVE</p>
-      <h1>Strange ideas,<br><em>made visible.</em></h1>
-      <p class="hero-copy">
-        A growing collection of my images, memes, articles, games, and comics.
-        Updated unpredictably, created deliberately.
+  <main class="blog-main">
+    <section class="blog-intro" aria-labelledby="intro-title">
+      <p class="blog-date">July 2026 · Taiwan</p>
+      <h1 id="intro-title">A quiet corner for strange ideas.</h1>
+      <p>
+        This is a small, growing collection of things I make. No algorithm,
+        no schedule—just comics, notes, experiments, and whatever seems worth keeping.
       </p>
-      <div class="hero-actions">
-        <a class="button button-primary" href="./Comics.html">Read the comics <span aria-hidden="true">↗</span></a>
-        <a class="text-link" href="#works">Explore the work <span aria-hidden="true">↓</span></a>
-      </div>
-      <div class="hero-stamp" aria-hidden="true">
-        <span>EST.</span>
-        <strong>2026</strong>
-        <span>TAIWAN</span>
-      </div>
     </section>
 
-    <section class="works-section" id="works" aria-labelledby="works-title">
-      <div class="section-heading">
+    <section class="archive" id="archive" aria-labelledby="archive-title">
+      <header class="archive-heading">
+        <h2 id="archive-title">Latest entries</h2>
+        <span>02 entries</span>
+      </header>
+
+      <article class="post-entry">
+        <time datetime="2026-07">Jul 2026</time>
         <div>
-          <p class="eyebrow">WHAT I MAKE</p>
-          <h2 id="works-title">The collection</h2>
+          <p class="post-type">Anime review · Long-form comic</p>
+          <h3><a href="./AngelsOfDeathReview.html">Angels of Death</a></h3>
+          <p>A spoiler-light viewing diary about game-like dialogue, a very strange promise, and an adaptation that ultimately gets it right.</p>
+          <a class="read-more" href="./AngelsOfDeathReview.html">Read review →</a>
         </div>
-        <p>A personal universe, permanently under construction.</p>
-      </div>
+      </article>
 
-      <div class="work-grid">
-        <a class="work-card featured" href="./Comics.html">
-          <span class="work-number">01</span>
-          <div>
-            <p class="card-label">NOW SHOWING</p>
-            <h3>Comics</h3>
-            <p>Short comics and inner monologues that turn life's little disasters into bigger ones.</p>
-          </div>
-          <span class="card-arrow" aria-hidden="true">↗</span>
-        </a>
+      <article class="post-entry">
+        <time datetime="2026-07">Jul 2026</time>
+        <div>
+          <p class="post-type">Comic · Episode 001</p>
+          <h3><a href="./Comics.html">Motion Sick Puke</a></h3>
+          <p>A four-panel inner monologue about motion sickness, panic, and one very unfortunate bus ride.</p>
+          <a class="read-more" href="./Comics.html">Read comic →</a>
+        </div>
+      </article>
 
-        <article class="work-card muted">
-          <span class="work-number">02</span>
-          <div>
-            <p class="card-label">COMING LATER</p>
-            <h3>Meme</h3>
-            <p>Moments that would be wasted if they never became memes.</p>
-          </div>
-        </article>
-
-        <article class="work-card muted">
-          <span class="work-number">03</span>
-          <div>
-            <p class="card-label">COMING LATER</p>
-            <h3>Articles & Games</h3>
-            <p>Words, experiments, and things you can occasionally play.</p>
-          </div>
-        </article>
+      <div class="archive-note">
+        <p>More things will appear here when they are ready.</p>
+        <p>Possible future subjects: memes, articles, and small games.</p>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
+  <footer class="blog-footer">
     <p>© 2026 Auto Ignorant</p>
-    <p>Made with curiosity &amp; questionable decisions.</p>
+    <p>Made in Taiwan, updated unpredictably.</p>
   </footer>
 </body>
 </html>
