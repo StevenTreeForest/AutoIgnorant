@@ -8,14 +8,14 @@
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body class="review-page">
-  <header class="blog-header">
-    <p class="blog-kicker">Personal creative archive · Anime viewing diary</p>
-    <a class="blog-title" href="./index.html" aria-label="Auto Ignorant home">Auto Ignorant</a>
-    <p class="blog-description">Images, comics, articles, games, and other questionable decisions.</p>
-    <nav class="blog-nav" aria-label="Main navigation">
+  <header class="site-header">
+    <a class="brand" href="./index.html" aria-label="Back to home">
+      <span class="brand-mark" aria-hidden="true">AI</span>
+      <span>Auto Ignorant</span>
+    </a>
+    <nav class="site-nav" aria-label="Main navigation">
       <a href="./index.html">Home</a>
-      <a href="./Comics.html" aria-current="page">Comics</a>
-      <a href="./index.html#archive">Archive</a>
+      <a class="active" href="./Comics.html" aria-current="page">Comics</a>
     </nav>
   </header>
 
@@ -24,18 +24,25 @@
       <header class="review-header">
         <p class="post-type">Anime review · Long-form comic</p>
         <h1>Angels of Death</h1>
-        <p class="review-deck">
-          I went in knowing nothing. What began as suspicion about game-like dialogue
-          became a strange romance, an impossible promise, and—somehow—a good adaptation.
-        </p>
-        <p class="review-details">
-          <span>6 moments</span>
-          <span>Read top to bottom</span>
-          <span>Spoiler-light</span>
-        </p>
       </header>
 
-      <figure class="review-frame">
+      <figure class="review-cover">
+        <img
+          src="./Resources/Images/Comics/AngelsOfDeathCover.png"
+          alt="Angels of Death anime cover featuring Rachel Gardner and Zack beneath a moonlit sky."
+          width="299"
+          height="290"
+          loading="eager">
+        <figcaption>Angels of Death</figcaption>
+      </figure>
+
+      <nav class="review-jump-links" aria-label="Jump to review format">
+        <span>Jump to:</span>
+        <a href="#comic-review">Comic review ↓</a>
+        <a href="#text-review">Text review</a>
+      </nav>
+
+      <figure class="review-frame" id="comic-review">
         <img
           src="./Resources/Images/Comics/AngelsOfDeathReview.jpg"
           alt="A six-part illustrated review of Angels of Death. A robot viewer first questions the game-like dialogue, discovers the anime is based on an RPG Maker game, becomes intrigued by the strange bond between Rachel and Zack, and finishes by praising the faithful adaptation."
@@ -45,14 +52,49 @@
         <figcaption>A viewing diary in six increasingly unexpected steps.</figcaption>
       </figure>
 
-      <section class="review-transcript" aria-labelledby="review-note-title">
-        <h2 id="review-note-title">The short version</h2>
-        <p>
-          At first, the dialogue feels too much like it came straight from a video game.
-          Then the central promise between a suicidal girl and a serial killer turns
-          unexpectedly intimate. By the end, staying faithful to the original story
-          feels like exactly the right decision.
-        </p>
+      <section class="review-transcript" id="text-review" aria-labelledby="text-review-title">
+        <h2 id="text-review-title">Text review</h2>
+
+        <p>I watched this anime without knowing anything about it.</p>
+
+        <section>
+          <h3>Start</h3>
+          <p>OK, a death game story.</p>
+        </section>
+
+        <section>
+          <h3>The Girl Talks</h3>
+          <p>What's wrong with the dialogue?</p>
+          <p>Is she a video game character?</p>
+        </section>
+
+        <section>
+          <h3>Checks Online</h3>
+          <p>Yeah, it's actually an anime based on an RPG Maker game.</p>
+          <p>Producer! You can't just copy the game dialogue directly into an anime screenplay.</p>
+          <p>That's lazy!</p>
+        </section>
+
+        <section>
+          <h3>Keeps Watching</h3>
+          <p>A suicidal girl who wants to die.</p>
+          <p>She wants the main guy, who is a serial killer, to kill her...</p>
+          <p>OK... a perfect match.</p>
+        </section>
+
+        <section>
+          <h3>The Story Develops</h3>
+          <p>Is it just me?</p>
+          <p>Is this getting romantic in a weird way?</p>
+          <p>Their promise that he'll kill her in the end?</p>
+        </section>
+
+        <section>
+          <h3>Finishes the Anime</h3>
+          <p>This is a good anime adaptation.</p>
+          <p>They shouldn't have changed the story, and they didn't.</p>
+          <p>Good job.</p>
+        </section>
       </section>
 
       <nav class="review-actions" aria-label="Review navigation">
@@ -64,7 +106,7 @@
 
   <footer class="blog-footer">
     <p>© 2026 Auto Ignorant</p>
-    <p>Made in Taiwan, updated unpredictably.</p>
+    <p>Published online, updated unpredictably.</p>
   </footer>
 </body>
 </html>
